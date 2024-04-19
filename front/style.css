@@ -1,0 +1,302 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #e8e4d6;
+}
+
+main{
+    height: auto;
+    width: 100%;
+
+}
+
+.header{
+    background-color: #000000;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.escrita-logo{
+    position: relative;
+    margin-left: 30px;
+    font-size: clamp(10px, 3vw, 50px);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e8e4d6;
+    /* procurar a fonte do logo */
+}
+
+.fa-bars {
+  font-size: clamp(10px, 2vw, 50px);
+  color: #e8e4d6;
+  margin-right: 30px;
+}
+
+.fotosinicio{
+    display: flex;
+    background-color: black;
+}
+
+.fotosinicio img{
+    width: 33.34%;
+    opacity: 0.75;
+}
+
+.textoBannerInicio{
+  position: absolute;
+  color: #e8e4d6;
+  margin-top: 0%;
+  margin-left: 69%;
+  font-size: clamp(0.1px, 2vw, 18px);
+}
+
+.textoDesconto{
+  margin-top: -15px;
+}
+
+.botoesDesconto{
+  width: 170px;
+  height: 35px;
+  margin-top: -5px;  
+}
+
+.botaoDesconto1{
+  height: 35px;
+  width: clamp(125px, 5vw, 170px);
+  background-color: #e8e4d6;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid black;  
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.botaoDesconto1:hover{
+  margin-left: 1px;
+  margin-top: -1px;
+}
+
+.espacador{
+  height: 2%;
+  width: 100%;
+  background-color: #000000;
+}
+.div-fundo-carrossel{
+  position: absolute;
+  margin-top: -16%;
+  width: 100%;
+  height: auto;
+}
+.texto-fundo-carrossel{
+  height: auto;
+  width: 100%;
+  color: #e8e4d6;
+  font-size: clamp(100px, 18vw, 310px);
+
+}
+.background-carrosel{
+ background-color: #000000;
+ height: auto;
+ width: 100%;
+}
+
+.slider{
+  margin: 0px auto;
+  width: 41.66%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.slides{
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+}
+
+.slide img{
+  width: 100%;
+  height: auto;
+  opacity: 0.90;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 100%;
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.manual-btn{
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:Last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #000000;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+  transition: 1s;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+  transition: 1s;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+  transition: 1s;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+  transition: 1s;
+}
+
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 53.8%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #000000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #000000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #000000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #000000;
+}
+.parte_baixo{
+  height: auto;
+  width: 100%;
+  background-color: #e8e4d6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img_parte_baixo{
+  height: auto;
+  margin-left: 100px;
+
+}
+
+.p_parte_baixo{
+  height: auto;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: clamp(0.1px, 5vw, 42px);
+}  
+
+footer{
+  position: relative;
+  bottom: 0;
+  background-color: #000000;
+  height: auto;
+  width: 100vw;
+  padding: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.footer input::placeholder{
+  color: #000000;
+}
+
+.contato input{
+  border: none;
+  background-color: #e8e4d6;
+  bottom: 10vh;
+  width: 33%;
+}
+
+.suporte{
+  width: 33%;
+}
+
+.termos{
+  width: 33%;
+}
+
+.contato{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-bottom: 10px;
+}
+
+.input-contato{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  gap: 10px;
+}
+
+.tituloFooterContato{
+  color: #e8e4d6;
+  margin-left: 50px;
+}
+
+.linha-vertical{
+  height: 1vh;
+  border-left: 2px solid #e8e4d6;
+  margin-right: 0px;
+  padding: 0px;
+}

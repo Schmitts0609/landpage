@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SComfort</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	
+</head>
+<body>
+	<header>
+		<section class="header">
+			<div class="escrita-logo"> SComfort </div>
+			<i class="fas fa-bars"></i>
+		</section>
+	</header>   
+    <main>
+        <div class="fotosinicio">
+            <img src="./assets/banner1.png" alt="Imagem 1">
+            <img src="./assets/banner2.png" alt="Imagem 2">
+            <img src="./assets/banner3.png" alt="Imagem 3">
+			<div class="textoBannerInicio">
+				<h1 class="tituloDesconto">ATÉ 70% OFF PARA QUEM É ASSINANTE.</h1>
+				<h3 class="textoDesconto">Válido para produtos selecionados.</h3>
+				<section class="botoesDesconto">
+					<button class="botaoDesconto1">Compre agora -></button>
+				</section>
+			</div>
+        </div>  
+		<div class="espacador">
+
+		</div>
+		<div class="background-carrosel">
+			<div class="div-fundo-carrossel">
+				<p class="texto-fundo-carrossel"> <i>NOVIDADES</i></p>
+			</div>
+			<section class="slider">
+				<div class="slides">
+					<!--radio buttons-->
+					<input type="radio" name="radio-btn" id="radio1">
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+					<!-- fim radio buttons-->
+					<!--slide images-->
+					<div class="slide first">
+						<img src="./assets/imagem-1.png" alt="imagem-1">
+					</div>
+					<div class="slide">
+						<img src="./assets/imagem-2.png" alt="imagem-2">
+					</div>
+					<div class="slide">
+						<img src="./assets/imagem-3.png" alt="imagem-3">
+					</div>
+					<div class="slide">
+						<img src="./assets/imagem-4.png" alt="imagem-4">
+					</div>
+					<!-- fim slide images-->
+					<!--navigation auto-->
+					<div class="navigation-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+					</div>
+				</div>
+				<div class="manual-navigation">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+			</section>
+		</div>
+		<div class="espacador">
+		</div>
+		<section class="parte_baixo">
+			<img class="img_parte_baixo" src="./assets/scomfort.png">
+			<p class="p_parte_baixo">Bem-vindo à <b>Scomfort</b>, mais do que uma loja de tênis, somos o símbolo da inovação no mundo corporativo.<br>Nossa missão é proporcionar não apenas calçados de alta qualidade, mas também uma experiência única para<br>pessoas de sucesso que buscam conforto e estilo no ambiente profissional. Prepare-se para descobrir uma nova<br>forma de caminhar rumo ao sucesso com os nossos produtos exclusivos.</p>
+		</section>
+	</main>
+    <footer class="footer">
+            <div class="contato">
+				<section class="tituloFooterContato">
+					<h2>Quer receber nossas ofertas<br> por email?</h2>
+				</section>	
+				<form action="#">
+					<label for="fname">nome</label>
+					<input type='text' id="nome" placeholder="Nome">
+					<label for="lname">email</label>
+					<input type="text" id="email" placeholder="Email">
+					<button id="handleSubmit">Enviar</button>
+				</form>
+			</div> 
+
+    </footer>  
+    
+    <script src="./main.js"></script>       
+</body>
+</html>
